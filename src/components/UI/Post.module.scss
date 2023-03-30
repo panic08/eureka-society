@@ -1,0 +1,118 @@
+@import "variables";
+.wrapper{
+  max-width: 590px;
+
+  margin: 20px 0;
+  justify-content: center;
+
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  align-items: center;
+  border-radius: 10px;
+  width: 590px;
+  height: auto;
+  //padding-bottom: 1px;
+  background: white;
+
+}
+
+.container{
+  margin: 0px 0;
+  display: flex;
+}
+.about{
+  margin: 0px 0px;
+  display: inline;
+  img{
+    width: 32px;
+    margin: 20px 20px;
+    height: 32px;
+    border-radius: 20px;
+  }
+
+}
+.about:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+.about__name{
+  display: inline;
+  margin: 8px 0;
+  h1{
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    color: black;
+  }
+  p{
+    font-size: 13px;
+    font-family: "Roboto Regular";
+    margin: -7px 0;
+    color: $second;
+  }
+  h1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  p:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+.title{
+  display: block;
+  h1{
+    cursor: pointer;
+    margin: -10px 20px;
+    font-size: 25px;
+    -ms-word-wrap: normal;
+    font-family: "Roboto Bold";
+  }
+}
+.main{
+  margin: 23px 20px;
+  width: 520px;
+  font-family: "Roboto Regular";
+  p {
+    cursor: pointer;
+    padding: 1px 0;
+    -ms-word-wrap: normal;
+    font-size: 17px;
+  }
+}
+.other{
+  display: block;
+  margin: 23px 20px;
+  a {
+    cursor: pointer;
+    font-size: 16.2px;
+    font-family: "Roboto Regular";
+    color: dodgerblue;
+  }
+}
+
+
+.likes{
+  margin: -10px 0;
+
+
+
+  p {
+    cursor: pointer;
+    display: inline;
+    margin: 0 -15px;
+    font-family: "Roboto Regular";
+    color: $second;
+    font-size: 14.4px;
+  }
+
+
+}
+.comments{
+  p {
+    display: inline;
+
+  }
+
+}

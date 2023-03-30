@@ -1,57 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React, {useEffect, useRef} from 'react';
+
+import './index.scss'
+
+import './App.scss';
+import {Route, Routes} from "react-router-dom";
+import Home from "./components/Home";
+import main from "./components/UI/App.module.scss";
+import {type} from "os";
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+          <div className="App">
+              <header style={{padding: "50px 0", margin: "-30px 0"}}>
+
+                  <div  className={main.wrapper}>
+                    <div className={main.container}>
+
+                        <div className={main.image}>
+                        <img src={require("./components/UI/img/img_4.png")}/>
+                        </div>
+
+
+                        <div className={main.input}>
+                            <input placeholder="Поиск"/>
+                        </div>
+
+                        <div className={main.bell}>
+                        <img src={require("./components/UI/img/bell.png")}/>
+                        </div>
+                        <div className={main.info}>
+                        <img src={require("./components/UI/img/default_ava.jpg")}/>
+                        </div>
+                        <div className={main.arrowDown}>
+                            <img src={require("./components/UI/img/down.png")}/>
+                        </div>
+                    </div>
+                  </div>
+
+              </header>
+
+
+              <main>
+              <Routes>
+                  <Route path={"/"} element={<Home/>}/>
+              </Routes>
+              </main>
+
+          </div>
   );
 }
 
